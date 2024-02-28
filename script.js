@@ -7,6 +7,8 @@ function draw() {
 
   //this is a call to myShape()
   myShape(width / 2, height / 2, 1);
+  myShape(width/3, height/3, 2);
+  myShape(width * 2/3, height * 2/3, 0.5)
   // myShape() takes three arguments
   // arg1: horizontal location
   // arg2: vertical location
@@ -21,8 +23,12 @@ function myShape(x, y, s) {
   push(); // make a separate layer
   translate(x, y); // move the origin point
   scale(s);
-  
-  ellipse(0, 0, w, h); // simple ellipse at the translated origin (0,0)
-  
+  fill (255, 255, 0)
+  ellipse(0, 0, 50, 50); // simple ellipse at the translated origin (0,0)
+  ellipse (-10, -5, 10);
+  ellipse (10, -5, 10);
+  fill (266, 0, 0);
+  ellipse (-10, -5, 5);
+  ellipse (10, -5, 5);
   pop(); // dispose of the layer
 }
