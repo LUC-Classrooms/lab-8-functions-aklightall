@@ -3,7 +3,7 @@ function setup() {
 }
 
 function draw() {
-  background(200);
+  background(255, 0, 200);
 
   //this is a call to myShape()
   myShape(width / 2, height / 2, 1);
@@ -25,10 +25,14 @@ function myShape(x, y, s) {
   scale(s);
   fill (255, 255, 0)
   ellipse(0, 0, 50, 50); // simple ellipse at the translated origin (0,0)
+  fill (255);
   ellipse (-10, -5, 10);
+  fill (255);
   ellipse (10, -5, 10);
-  fill (266, 0, 0);
+  fill (0);
   ellipse (-10, -5, 5);
   ellipse (10, -5, 5);
+  fill(255, 150, 180);
+  ellipse (0, 10, 10, 12);
   pop(); // dispose of the layer
 }
